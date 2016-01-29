@@ -1,3 +1,4 @@
+
 /**
  * Store details of a club membership.
  * 
@@ -13,6 +14,8 @@ public class Membership
     // The year in which the membership was taken out.
     private int year;
 
+    
+
     /**
      * Constructor for objects of class Membership.
      * @param name The name of the member.
@@ -22,6 +25,7 @@ public class Membership
     public Membership(String name, int month, int year)
         throws IllegalArgumentException
     {
+       
         if(month < 1 || month > 12) {
             throw new IllegalArgumentException(
                 "Month " + month + " out of range. Must be in the range 1 ... 12");
@@ -29,6 +33,7 @@ public class Membership
         this.name = name;
         this.month = month;
         this.year = year;
+        
     }
     
     /**
